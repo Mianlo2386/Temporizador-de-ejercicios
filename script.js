@@ -21,12 +21,19 @@ function iniciarTemporizador() {
     enDescanso = false;
     seriesRestantes = series;
 
+    document.querySelector('.leyenda').classList.add('oculto');
+    document.getElementById('temporizador').classList.remove('oculto');
+
     temporizadorDiv.textContent = 'GO!';
 
-    tiempoActual = tiempoTrabajo;
+    let segundosTotales = enDescanso ? tiempoDescanso : tiempoTrabajo;
 
     temporizador = setInterval(() => {
-        if (tiempoActual === 0) {
+        const minutos = Math.floor(segundosTotales / 60);
+        const segundos = segundosTotales % 60;
+        const tiempoRestante = `${minutos < 10 ? '0' : ''}${minutos}:${segundos < 10 ? '0' : ''}${segundos}`;
+
+        if (segundosTotales === 0) {
             if (!enDescanso) {
                 if (seriesRestantes === 1) {
                     clearInterval(temporizador);
@@ -35,19 +42,22 @@ function iniciarTemporizador() {
                 }
                 temporizadorDiv.textContent = 'Descanso';
                 enDescanso = true;
-                tiempoActual = tiempoDescanso;
+                segundosTotales = tiempoDescanso;
             } else {
                 seriesRestantes--;
                 temporizadorDiv.textContent = 'GO!';
                 enDescanso = false;
-                tiempoActual = tiempoTrabajo;
+                segundosTotales = tiempoTrabajo;
             }
         } else {
-            temporizadorDiv.textContent = tiempoActual;
-            tiempoActual--;
+            temporizadorDiv.textContent = tiempoRestante;
+            segundosTotales--;
         }
+        
+        
     }, 1000);
 }
+
 
 
 iniciarButton.addEventListener('click', iniciarTemporizador);
