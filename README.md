@@ -19,10 +19,12 @@ Este es un temporizador de ejercicios simple que te permite establecer series de
 <h2>Demo</h2>
 
 Si quieres ver una demostración en vivo de este temporizador, puedes encontrarla aquí: https://temporizador-de-ejercicios.vercel.app/
-Contribuciones
-![Screenshot 1][temp1](https://github.com/Mianlo2386/Temporizador-de-ejercicios/assets/116380765/5ad29b8b-dc99-43b0-9773-645108f79f44) ![Screenshot 2]![temp2)](https://github.com/Mianlo2386/Temporizador-de-ejercicios/assets/116380765/7c6f0671-fa31-41ce-acba-7cb94444c1be)
- ![Screenshot 3]![temp3](https://github.com/Mianlo2386/Temporizador-de-ejercicios/assets/116380765/93255a8e-37ca-4194-a65b-b003e64a2ad8)
+![temp1](https://github.com/Mianlo2386/Temporizador-de-ejercicios/assets/116380765/e6919db2-2eb7-4c88-8e3d-468bd6ff9c5e)
+![temp2)](https://github.com/Mianlo2386/Temporizador-de-ejercicios/assets/116380765/a79f885e-600f-4e73-8ae2-4de070dd78a1)
+![temp3](https://github.com/Mianlo2386/Temporizador-de-ejercicios/assets/116380765/665a91b7-56ff-4cdd-a013-bfa5cdfaedc6)
 
+
+Contribuciones
 
 ¡Las contribuciones son bienvenidas! Si tienes alguna idea de mejora o encuentras algún error, por favor abre un problema o envía una solicitud de extracción.
 
